@@ -149,6 +149,20 @@ a { text-decoration: none; color: inherit; }
 }
 .logo span { color: var(--purple); }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-link-portfolio {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+  transition: color .2s;
+}
+.nav-link-portfolio:hover { color: #fff; }
+
 /* ==============================
    HERO
 ============================== */
