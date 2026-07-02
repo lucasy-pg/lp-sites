@@ -1,68 +1,59 @@
-# Lucas Baptista — Landing Page
+# Bapweb — Site institucional
 
-Landing page profissional para divulgação de serviços de criação de sites. O objetivo da página é converter visitantes em leads, direcionando-os a marcar um diagnóstico gratuito via WhatsApp.
+Site da **Bapweb**, empresa de tecnologia e estratégia digital. O objetivo é revelar o valor de negócios no ambiente digital e converter visitantes em contato via WhatsApp.
+
+- **Domínio:** www.bapweb.com.br
+- **Posicionamento:** "A Bapweb transforma o valor de negócios em uma presença digital clara, estratégica e capaz de gerar percepção, confiança e crescimento."
 
 ## Estrutura
 
 ```
-LP sites/
-├── index.html   # Estrutura e conteúdo da página
-├── style.css    # Estilos (tema dark, tipografia, animações)
-├── script.js    # Navbar scroll, smooth scroll, reveal on scroll
-└── README.md
+├── index.html      # LP principal (hero, quem somos, soluções, diferenciais, processo, CTA)
+├── modelos.html    # Página de Projetos/Portfólio (grid por segmento + CTA)
+├── style.css       # Design system compartilhado (dark premium, base azul, aurora)
+├── script.js       # Navbar scroll, smooth scroll, reveal on scroll, parallax do hero
+├── bapweb_icon.png # Ícone da marca (nav, footer e favicon) — recorte do ícone transparente
+├── bapweb_logo.png # Lockup completo da marca (reserva p/ OG image / usos futuros)
+└── prints/         # Screenshots dos modelos por segmento
 ```
 
-## Seções
+## Identidade visual
 
-1. **Hero** — título de impacto + chamada para diagnóstico gratuito
-2. **Problemas** — dores do cliente (ausência de site, lentidão, não-responsivo)
-3. **O que entrego** — diferenciais do serviço
-4. **Como funciona** — processo em 4 etapas (diagnóstico → entrega)
-5. **CTA / Diagnóstico** — botão principal de conversão via WhatsApp
+Tokens no topo do `style.css`:
+
+```css
+--brand:      #2c5bff;  /* azul da marca (#1B51FE) refinado para tela */
+--brand-deep: #1b51fe;  /* azul exato da logo */
+--brand-lt:   #6e93ff;
+--indigo:     #7c6bff;  /* harmoniza com o azul (aurora) */
+--cyan:       #35c6ff;  /* harmoniza com o azul (aurora) */
+--bg:         #060910;  /* navy quase-preto */
+```
+
+A "aurora" do hero (`.aurora .blob`) usa azul → índigo → ciano em movimento sutil,
+com opacidade baixa para manter a sofisticação.
+
+## Pendências de assets
+
+- [x] **Ícone da Bapweb** — `bapweb_icon.png` integrado no nav, footer e favicon.
+- [ ] Prints reais dos projetos entregues (hoje usa os modelos de referência da pasta `prints/`).
 
 ## Personalização
 
-### Número do WhatsApp
-O número está definido em dois lugares no `index.html`. Busque por `wa.me/` para localizá-los.
-
-```
-wa.me/5519971273568
-```
-
-### Texto da mensagem pré-preenchida
-A mensagem enviada ao clicar no botão está codificada na URL (`?text=...`). Edite diretamente no `index.html` se quiser mudar o texto.
-
-### Cores
-As variáveis de cor ficam no topo do `style.css`:
-
-```css
---purple:  #8b5cf6;
---pink:    #ec4899;
---grad:    linear-gradient(135deg, #8b5cf6, #ec4899);
-```
-
-### Conteúdo
-Todo o texto está diretamente no `index.html`, sem dependência de CMS ou build tool. Edite diretamente.
+- **WhatsApp:** `wa.me/5519971273568` (buscar por `wa.me/` no HTML).
+- **Contato:** e-mail `lucasfgb9@gmail.com` · Instagram `@lucasbaptistawb` (no footer).
+- **Conteúdo:** todo o texto está direto no HTML, sem CMS ou build.
 
 ## Como publicar
 
-O projeto é HTML/CSS/JS puro — sem dependências, sem build.
+Projeto HTML/CSS/JS puro — sem dependências, sem build.
 
-**Opção 1 — Vercel (recomendado)**
 ```bash
-npx vercel
+npx vercel        # deploy (recomendado)
 ```
-
-**Opção 2 — GitHub Pages**
-1. Suba os arquivos para um repositório público
-2. Ative GitHub Pages em Settings → Pages → Branch: main
-
-**Opção 3 — Qualquer hospedagem**
-Faça upload dos três arquivos via FTP ou painel da hospedagem.
 
 ## Tecnologias
 
-- HTML5 semântico
-- CSS3 (variáveis, grid, animações, backdrop-filter)
-- JavaScript vanilla (sem frameworks)
+- HTML5 semântico · CSS3 (variáveis, grid, backdrop-filter, animações)
+- JavaScript vanilla (IntersectionObserver, parallax, prefers-reduced-motion)
 - Google Fonts — Inter

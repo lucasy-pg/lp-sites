@@ -4,16 +4,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lucas Baptista — Sites que vendem</title>
+  <title>Bapweb — Tecnologia e estratégia digital para negócios</title>
   <meta name="description"
-    content="Seu negócio merece um site profissional. Marque um diagnóstico gratuito e descubra como aumentar suas vendas online." />
+    content="A Bapweb cria sites e experiências digitais que revelam o valor do seu negócio. Presença digital clara, estratégica e feita para gerar confiança e crescimento." />
+  <link rel="canonical" href="https://www.bapweb.com.br/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Bapweb — Tecnologia e estratégia digital" />
+  <meta property="og:description"
+    content="Criamos sites e experiências digitais que traduzem a essência, o valor e o potencial de negócios." />
+  <meta property="og:url" content="https://www.bapweb.com.br/" />
+  <meta property="og:image" content="https://www.bapweb.com.br/bapweb_logo.png" />
+  <meta property="og:locale" content="pt_BR" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
     rel="stylesheet" />
-  <link rel="icon" type="image/png" href="favicon_lb_roxo.png" />
-  <link rel="apple-touch-icon" href="favicon_lb_roxo.png" />
+  <link rel="icon" type="image/png" href="bapweb_icon.png" />
+  <link rel="apple-touch-icon" href="bapweb_icon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -22,39 +33,51 @@
   <!-- NAV -->
   <nav id="navbar">
     <div class="nav-inner">
-      <a href="#" class="logo">LB<span>.</span></a>
+      <a href="#" class="logo" aria-label="Bapweb — página inicial">
+        <img class="logo-mark" src="bapweb_icon.png" alt="" aria-hidden="true" width="32" height="32" />
+        <span class="logo-word">Bapweb</span>
+      </a>
       <div class="nav-links">
-        <a href="modelos.html" class="nav-link-portfolio">Ver Modelos</a>
-        <a href="#diagnostico" class="btn-nav">Diagnóstico gratuito</a>
+        <a href="#solucoes" class="nav-link">Soluções</a>
+        <a href="#processo" class="nav-link">Processo</a>
+        <a href="modelos.html" class="nav-link">Projetos</a>
+        <a href="#contato" class="btn-nav">Iniciar projeto</a>
       </div>
     </div>
   </nav>
 
   <!-- HERO -->
   <section id="hero">
+    <div class="aurora">
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+      <div class="blob b3"></div>
+    </div>
+    <div class="grid-overlay"></div>
     <div class="noise"></div>
-    <div class="blob b1"></div>
-    <div class="blob b2"></div>
 
     <div class="hero-inner">
-      <p class="eyebrow">Criação de sites profissionais</p>
+      <span class="hero-badge"><span class="dot"></span> Tecnologia e estratégia digital</span>
       <h1>
-        O seu negócio merece<br />
-        um site que<br />
-        <em>realmente vende</em>
+        A primeira impressão<br />
+        do seu negócio<br />
+        <em>começa na internet</em>
       </h1>
       <p class="hero-desc">
-        Sites lentos, genéricos ou inexistentes custam clientes todo dia.
-        Eu crio a presença digital que o seu negócio precisa para crescer de verdade.
+        A Bapweb transforma o valor do seu negócio em uma presença digital clara,
+        estratégica e capaz de gerar percepção, confiança e crescimento.
       </p>
-      <a href="#diagnostico" class="btn-hero">
-        Marcar diagnóstico gratuito
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
-          stroke="currentColor" stroke-width="2.5">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-        </svg>
-      </a>
-      <p class="hero-note">Sem compromisso · 100% gratuito · Respondo hoje</p>
+      <div class="hero-actions">
+        <a href="#contato" class="btn-hero">
+          Iniciar meu projeto
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+          </svg>
+        </a>
+        <a href="modelos.html" class="btn-ghost">Ver projetos</a>
+      </div>
+      <p class="hero-note">Resposta rápida · Atendimento próximo · Sem compromisso</p>
     </div>
 
     <div class="scroll-cue">
@@ -62,41 +85,180 @@
     </div>
   </section>
 
-  <!-- PROBLEMAS -->
-  <section id="problemas">
+  <!-- TRUST STRIP -->
+  <div class="trust">
+    <div class="container trust-inner">
+      <div class="trust-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="1.8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+        </svg>
+        Design exclusivo, sem template
+      </div>
+      <div class="trust-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="1.8">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+        </svg>
+        Performance e velocidade
+      </div>
+      <div class="trust-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="1.8">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3" />
+        </svg>
+        100% responsivo
+      </div>
+      <div class="trust-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="1.8">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+        </svg>
+        Otimizado para o Google
+      </div>
+    </div>
+  </div>
+
+  <!-- MANIFESTO / QUEM SOMOS -->
+  <section id="manifesto">
+    <div class="container manifesto-inner" data-reveal>
+      <p class="eyebrow center">Quem somos</p>
+      <p class="manifesto-text">
+        Uma empresa de tecnologia e estratégia digital. Criamos sites e experiências
+        que traduzem a <b>essência, o valor e o potencial</b> de cada negócio para que sejam percebidos com a mesma
+        qualidade que entregam.
+      </p>
+      <p class="manifesto-sub">
+        Minha missão é revelar o valor da sua empresa no ambiente digital, fortalecendo seu
+        posicionamento e tornando-o referência no seu seguimento.
+      </p>
+    </div>
+  </section>
+
+  <!-- POR QUE IMPORTA -->
+  <section id="porque">
     <div class="container">
-      <p class="eyebrow center">Por que você precisa disso agora</p>
-      <h2 class="sec-title center">Você está perdendo clientes<br /><span>sem perceber</span></h2>
+      <p class="eyebrow center">Por que isso importa</p>
+      <h2 class="sec-title center">Seu trabalho é excelente.<br /><span>Sua presença digital precisa provar isso.</span>
+      </h2>
+      <p class="sec-lead center">
+        No digital, a percepção vem antes da conversa. É o site que define se o cliente
+        confia — ou segue para o concorrente.
+      </p>
 
       <div class="prob-grid">
-        <div class="prob-card" data-reveal>
-          <span class="prob-icon">📉</span>
-          <h3>Sem site = sem credibilidade</h3>
-          <p>Hoje, 80% das pessoas pesquisam no Google antes de comprar. Se você não aparece, o concorrente aparece.</p>
+        <div class="prob-card card" data-reveal>
+          <div class="icon-chip">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </svg>
+          </div>
+          <h3>A decisão começa no Google</h3>
+          <p>Antes de comprar, o cliente pesquisa. Quem não aparece — ou aparece mal — é descartado em segundos, sem
+            chance de mostrar valor.</p>
         </div>
-        <div class="prob-card" data-reveal>
-          <span class="prob-icon">🐢</span>
-          <h3>Site lento afasta clientes</h3>
-          <p>53% dos visitantes abandonam páginas que demoram mais de 3 segundos. Velocidade é lucro.</p>
+        <div class="prob-card card" data-reveal>
+          <div class="icon-chip">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+          </div>
+          <h3>Cada segundo custa clientes</h3>
+          <p>Sites lentos ou confusos afastam. A experiência digital é o novo cartão de visita — e a maioria julga em
+            menos de 3 segundos.</p>
         </div>
-        <div class="prob-card" data-reveal>
-          <span class="prob-icon">📱</span>
-          <h3>Site não adaptado ao celular</h3>
-          <p>Mais de 70% do tráfego vem de smartphones. Um site que não funciona no mobile perde a maioria.</p>
+        <div class="prob-card card" data-reveal>
+          <div class="icon-chip">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+            </svg>
+          </div>
+          <h3>Percepção é posicionamento</h3>
+          <p>Uma presença digital à altura do seu negócio comunica seriedade, gera confiança e coloca você acima da
+            concorrência.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- O QUE ENTREGO -->
+  <!-- SOLUÇÕES / O QUE FAZEMOS -->
+  <section id="solucoes">
+    <div class="container">
+      <p class="eyebrow center">Soluções</p>
+      <h2 class="sec-title center">Sites e páginas que<br /><span>trabalham pelo seu negócio</span></h2>
+      <p class="sec-lead center">Nosso foco é criação de sites e páginas de alta performance, feitas sob medida para o
+        seu objetivo.</p>
+
+      <div class="solucoes-grid">
+        <div class="solucao-card card" data-reveal>
+          <div class="icon-chip">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253M3 12a8.959 8.959 0 0 0 .284 2.253" />
+            </svg>
+          </div>
+          <h3>Site Institucional</h3>
+          <p class="solucao-para"><span>Para quem é</span>Empresas e profissionais que precisam de uma presença digital
+            sólida, confiável e à altura da sua reputação.</p>
+          <p class="solucao-resultado"><span>Resultado</span>Credibilidade imediata, autoridade no seu mercado e uma
+            vitrine que apresenta seu valor 24 horas por dia.</p>
+        </div>
+
+        <div class="solucao-card card" data-reveal>
+          <div class="icon-chip">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+            </svg>
+          </div>
+          <h3>Landing Page</h3>
+          <p class="solucao-para"><span>Para quem é</span>Quem quer vender um produto ou serviço, lançar uma oferta ou
+            capturar contatos com uma página objetiva.</p>
+          <p class="solucao-resultado"><span>Resultado</span>Uma página direta e persuasiva, desenhada para transformar
+            cada visitante em cliente ou lead qualificado.</p>
+        </div>
+
+        <div class="solucao-card card" data-reveal>
+          <div class="icon-chip">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+            </svg>
+          </div>
+          <h3>Site para Negócio Local</h3>
+          <p class="solucao-para"><span>Para quem é</span>Negócios que atendem na sua região — clínicas, restaurantes,
+            salões, oficinas, escritórios e mais.</p>
+          <p class="solucao-resultado"><span>Resultado</span>Apareça nas buscas da sua cidade e receba mais contatos e
+            agendamentos direto pelo WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS / O QUE ENTREGO -->
   <section id="entrego">
     <div class="container">
-      <p class="eyebrow center">O que você recebe</p>
-      <h2 class="sec-title center">Um site feito para<br /><span>converter visitas em vendas</span></h2>
+      <p class="eyebrow center">O que entregamos</p>
+      <h2 class="sec-title center">Cada detalhe pensado<br /><span>para gerar resultado</span></h2>
+      <p class="sec-lead center">Não é só um site bonito. É estratégia, tecnologia e cuidado do começo ao fim.</p>
 
       <div class="features-grid">
         <div class="feat" data-reveal>
-          <div class="feat-icon">
+          <div class="icon-chip">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24"
               stroke="currentColor" stroke-width="1.8">
               <path stroke-linecap="round" stroke-linejoin="round"
@@ -105,11 +267,11 @@
           </div>
           <div>
             <h4>Design exclusivo</h4>
-            <p>Nada de template genérico. Cada site é criado do zero, pensado para a sua marca.</p>
+            <p>Nada de template genérico. Cada projeto é criado do zero, pensado para a sua marca.</p>
           </div>
         </div>
         <div class="feat" data-reveal>
-          <div class="feat-icon">
+          <div class="icon-chip">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24"
               stroke="currentColor" stroke-width="1.8">
               <path stroke-linecap="round" stroke-linejoin="round"
@@ -122,7 +284,7 @@
           </div>
         </div>
         <div class="feat" data-reveal>
-          <div class="feat-icon">
+          <div class="icon-chip">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24"
               stroke="currentColor" stroke-width="1.8">
               <path stroke-linecap="round" stroke-linejoin="round"
@@ -131,11 +293,11 @@
           </div>
           <div>
             <h4>Carregamento rápido</h4>
-            <p>Sites otimizados que carregam em menos de 2 segundos, sem perder visitantes.</p>
+            <p>Sites otimizados que carregam em segundos, sem perder visitantes pelo caminho.</p>
           </div>
         </div>
         <div class="feat" data-reveal>
-          <div class="feat-icon">
+          <div class="icon-chip">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24"
               stroke="currentColor" stroke-width="1.8">
               <path stroke-linecap="round" stroke-linejoin="round"
@@ -148,7 +310,7 @@
           </div>
         </div>
         <div class="feat" data-reveal>
-          <div class="feat-icon">
+          <div class="icon-chip">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24"
               stroke="currentColor" stroke-width="1.8">
               <path stroke-linecap="round" stroke-linejoin="round"
@@ -156,12 +318,12 @@
             </svg>
           </div>
           <div>
-            <h4>Suporte pós-entrega</h4>
-            <p>Não some depois de entregar. Estou disponível para ajustes e dúvidas.</p>
+            <h4>Acompanhamento próximo</h4>
+            <p>Você acompanha o projeto de perto e conta com suporte de verdade após a entrega.</p>
           </div>
         </div>
         <div class="feat" data-reveal>
-          <div class="feat-icon">
+          <div class="icon-chip">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24"
               stroke="currentColor" stroke-width="1.8">
               <path stroke-linecap="round" stroke-linejoin="round"
@@ -169,109 +331,91 @@
             </svg>
           </div>
           <div>
-            <h4>Entrega ágil e sem enrolação</h4>
-            <p>Processo direto do diagnóstico à publicação. Sem burocracia, sem espera desnecessária.</p>
+            <h4>Entrega ágil</h4>
+            <p>Processo direto, do briefing à publicação. Sem burocracia, sem espera desnecessária.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- O QUE OFEREÇO -->
-  <section id="solucoes">
+  <!-- PROCESSO -->
+  <section id="processo">
     <div class="container">
-      <p class="eyebrow center">Soluções</p>
-      <h2 class="sec-title center">O que posso<br /><span>fazer pelo seu negócio</span></h2>
-
-      <div class="solucoes-grid">
-
-        <div class="solucao-card" data-reveal>
-          <div class="solucao-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253M3 12a8.959 8.959 0 0 0 .284 2.253" /></svg>
-          </div>
-          <h3>Site Institucional</h3>
-          <p class="solucao-para"><span>Para quem é</span>Empresas e profissionais que precisam de presença digital profissional e confiável.</p>
-          <p class="solucao-resultado"><span>Resultado</span>Credibilidade imediata, clientes te encontrando no Google e uma vitrine que funciona 24h.</p>
-        </div>
-
-        <div class="solucao-card" data-reveal>
-          <div class="solucao-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8.689c0-.864.933-1.406 1.683-.977l7.108 4.061a1.125 1.125 0 0 0 1.118 0l7.108-4.061A1.125 1.125 0 0 1 21 8.689v8.06a2.25 2.25 0 0 1-2.25 2.25H5.25a2.25 2.25 0 0 1-2.25-2.25V8.69Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M3 8.689c0-.864.933-1.406 1.683-.977l7.108 4.061a1.125 1.125 0 0 0 1.118 0l7.108-4.061A1.125 1.125 0 0 1 21 8.689" /></svg>
-          </div>
-          <h3>Landing Page de Vendas</h3>
-          <p class="solucao-para"><span>Para quem é</span>Quem quer vender um produto, serviço ou capturar contatos com uma página focada.</p>
-          <p class="solucao-resultado"><span>Resultado</span>Página direta e persuasiva, feita para converter visitante em cliente ou lead.</p>
-        </div>
-
-        <div class="solucao-card" data-reveal>
-          <div class="solucao-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" /></svg>
-          </div>
-          <h3>Site para Negócio Local</h3>
-          <p class="solucao-para"><span>Para quem é</span>Negócios que atendem clientes na cidade — restaurantes, clínicas, salões, oficinas e mais.</p>
-          <p class="solucao-resultado"><span>Resultado</span>Apareça nas buscas da sua região e receba mais contatos e agendamentos pelo WhatsApp.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- COMO FUNCIONA -->
-  <section id="como-funciona">
-    <div class="container">
-      <p class="eyebrow center">Processo</p>
-      <h2 class="sec-title center">Como funciona<br /><span>do início ao fim</span></h2>
+      <p class="eyebrow center">Como trabalhamos</p>
+      <h2 class="sec-title center">Do primeiro contato<br /><span>ao site no ar</span></h2>
 
       <div class="steps">
         <div class="step" data-reveal>
           <div class="step-num">01</div>
           <div class="step-body">
-            <h4>Diagnóstico gratuito</h4>
-            <p>Você me conta sobre o seu negócio, objetivos e público. Entendo o que você precisa antes de qualquer
-              coisa.</p>
+            <h4>Entendimento</h4>
+            <p>Mergulhamos no seu negócio, objetivos e público. Entender o seu valor é o primeiro passo para revelá-lo.
+            </p>
           </div>
         </div>
         <div class="step-connector"></div>
         <div class="step" data-reveal>
           <div class="step-num">02</div>
           <div class="step-body">
-            <h4>Proposta personalizada</h4>
-            <p>Apresento um plano feito para o seu negócio — sem pacote engessado, sem custo surpresa.</p>
+            <h4>Estratégia e proposta</h4>
+            <p>Definimos a direção certa e apresentamos um plano sob medida — sem pacote engessado, sem custo surpresa.
+            </p>
           </div>
         </div>
         <div class="step-connector"></div>
         <div class="step" data-reveal>
           <div class="step-num">03</div>
           <div class="step-body">
-            <h4>Desenvolvimento</h4>
-            <p>Crio o site com foco em conversão, velocidade e identidade da sua marca. Você acompanha em tempo real.
-            </p>
+            <h4>Design e desenvolvimento</h4>
+            <p>Criamos a experiência com foco em identidade, performance e conversão. Você acompanha cada etapa.</p>
           </div>
         </div>
         <div class="step-connector"></div>
         <div class="step" data-reveal>
           <div class="step-num">04</div>
           <div class="step-body">
-            <h4>Entrega e publicação</h4>
-            <p>Site no ar, testado em todos os dispositivos. Você recebe o acesso completo e treinamento de uso.</p>
+            <h4>Entrega e evolução</h4>
+            <p>Site no ar, testado em todos os dispositivos, com acesso completo e suporte para crescer junto com você.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA / DIAGNÓSTICO -->
-  <section id="diagnostico">
+  <!-- PORTFÓLIO TEASER -->
+  <section id="portfolio-teaser">
+    <div class="container">
+      <div class="teaser-box" data-reveal>
+        <div>
+          <p class="eyebrow">Projetos</p>
+          <h2>Veja o que somos<br />capazes de criar</h2>
+          <p>Exemplos de sites por segmento, cada um com identidade única. Inspire-se e imagine o seu.</p>
+        </div>
+        <a href="modelos.html" class="btn-hero">
+          Explorar projetos
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / CONTATO -->
+  <section id="contato">
     <div class="container">
       <div class="cta-box" data-reveal>
         <div class="cta-glow"></div>
-        <p class="eyebrow center">Diagnóstico gratuito</p>
-        <h2 class="cta-title">Pronto para ter um site<br />que trabalha por você?</h2>
+        <p class="eyebrow center">Vamos começar</p>
+        <h2 class="cta-title">Pronto para revelar o<br />valor do seu negócio?</h2>
         <p class="cta-desc">
-          Me chame no WhatsApp agora. Em 15 minutos de conversa, já fica claro o que o seu negócio precisa — sem
-          pressão, sem compromisso.
+          Conte pra gente sobre o seu projeto. Em uma conversa rápida já fica claro
+          o caminho para a sua presença digital — sem pressão, sem compromisso.
         </p>
-        <a href="https://wa.me/5519971273568?text=Ol%C3%A1%20Lucas%2C%20quero%20marcar%20um%20diagn%C3%B3stico%20gratuito%20para%20meu%20site!"
+        <a href="https://wa.me/5519971273568?text=Ol%C3%A1%20Bapweb%2C%20quero%20conversar%20sobre%20um%20projeto%20de%20site!"
           class="btn-wpp" target="_blank" rel="noopener">
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
             <path
@@ -279,24 +423,48 @@
             <path
               d="M12 0C5.373 0 0 5.373 0 12c0 2.135.558 4.137 1.534 5.875L0 24l6.335-1.524A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.017-1.374l-.36-.214-3.727.897.933-3.618-.235-.372A9.779 9.779 0 0 1 2.182 12C2.182 6.575 6.575 2.182 12 2.182S21.818 6.575 21.818 12 17.425 21.818 12 21.818z" />
           </svg>
-          Quero meu diagnóstico gratuito
+          Falar com a Bapweb
         </a>
-        <p class="cta-note">Atendimento de seg. a sab. · Resposta rápida garantida</p>
+        <p class="cta-note">Atendimento de seg. a sáb. · Resposta rápida garantida</p>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <div class="container footer-inner">
-      <span class="logo">LB<span>.</span></span>
-      <p>© 2025 Lucas Baptista. Todos os direitos reservados.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo" aria-label="Bapweb">
+            <img class="logo-mark" src="bapweb_icon.png" alt="" aria-hidden="true" width="32" height="32" />
+            <span class="logo-word">Bapweb</span>
+          </a>
+          <p>Tecnologia e estratégia digital. Criamos sites e experiências que revelam o valor do seu negócio.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Navegação</h5>
+          <a href="#solucoes">Soluções</a>
+          <a href="#entrego">O que entregamos</a>
+          <a href="#processo">Processo</a>
+          <a href="modelos.html">Projetos</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contato</h5>
+          <a href="https://wa.me/5519971273568" target="_blank" rel="noopener">WhatsApp (19) 97127-3568</a>
+          <a href="mailto:lucasfgb9@gmail.com">lucasfgb9@gmail.com</a>
+          <a href="https://instagram.com/lucasbaptistawb" target="_blank" rel="noopener">@lucasbaptistawb</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Bapweb. Todos os direitos reservados.</span>
+        <span>www.bapweb.com.br</span>
+      </div>
     </div>
   </footer>
 
   <!-- FLOAT BUTTON -->
-  <a href="https://wa.me/5519971273568?text=Ol%C3%A1%20Lucas%2C%20quero%20marcar%20um%20diagn%C3%B3stico%20gratuito%20para%20meu%20site!"
-    class="wpp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <a href="https://wa.me/5519971273568?text=Ol%C3%A1%20Bapweb%2C%20quero%20conversar%20sobre%20um%20projeto%20de%20site!"
+    class="wpp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
       <path
         d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
